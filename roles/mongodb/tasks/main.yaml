@@ -1,0 +1,11 @@
+- name: Deploy MongoDB service
+  docker_container:
+    name: mongodb_service
+    image: "{{ mongodb_service_image }}"
+    state: started
+    ports:
+      - "{{ mongodb_service_port }}:27017"
+    env:
+      MONGO_INITDB_DATABASE: "{{ mongodb_database }}"
+      MONGO_INITDB_ROOT_USERNAME: "{{ mongodb_root_username }}"
+      MONGO_INITDB_ROOT_PASSWORD: "{{ mongodb_root_password }}"

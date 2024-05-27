@@ -1,0 +1,10 @@
+---
+- name: Setup  services
+  hosts: all
+  become: true
+  gather_facts: true
+
+  roles:
+    - web
+    - db
+    - api

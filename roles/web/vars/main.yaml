@@ -1,0 +1,3 @@
+# Variables for web service deployment
+web_service_image: "vdt2024-midterm-web:latest"
+web_service_port: "3000"

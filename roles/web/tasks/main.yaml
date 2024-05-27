@@ -1,0 +1,7 @@
+- name: Deploy web service
+  docker_container:
+    name: web_service
+    image: "{{ web_service_image }}"
+    state: started
+    ports:
+      - "{{ web_service_port }}:3000"

@@ -1,0 +1,4 @@
+# Variables for API service deployment
+api_service_image: "api-service:latest"
+api_service_port: "3000"
+db_url: "mongodb+srv://maintn124:adminPassword@vdt2024db.6hhluvk.mongodb.net/VDT2024API?retryWrites=true&w=majority&appName=VDT2024DB"

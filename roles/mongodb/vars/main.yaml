@@ -1,0 +1,6 @@
+# Variables for MongoDB service deployment
+mongodb_service_image: "mongo:4.0-xenial"
+mongodb_database: "mydb"
+mongodb_root_username: "myuser"
+mongodb_root_password: "mypassword"
+mongodb_service_port: "27017"
